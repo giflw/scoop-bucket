@@ -10,10 +10,6 @@
         "64bit": {
             "url": "https://windows.php.net/downloads/releases/php-8.2.7-Win32-vs16-x64.zip",
             "hash": "cff587a749e3f043256fbcfb6c9296e4da3e6dfcd78d8d267a9af5c4fc2620c6"
-        },
-        "32bit": {
-            "url": "https://windows.php.net/downloads/releases/php-8.2.7-Win32-vs16-x86.zip",
-            "hash": "f8bb163180dcfe0f3e9e743adbba817ead0a1d10ae0737138e64477fb42a34ae"
         }
     },
     "pre_install": [
@@ -49,9 +45,6 @@
         "architecture": {
             "64bit": {
                 "url": "https://windows.php.net/downloads/releases/php-$version-Win32-vs16-x64.zip"
-            },
-            "32bit": {
-                "url": "https://windows.php.net/downloads/releases/php-$version-Win32-vs16-x86.zip"
             }
         },
         "hash": {

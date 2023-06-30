@@ -13,6 +13,6 @@
         "github": "https://github.com/lihaoyi/Ammonite"
     },
     "autoupdate": {
-        "url": "https://github.com/lihaoyi/Ammonite/releases/download/$version/2.12-$version#/amm.bat"
+        "url": "https://github.com/lihaoyi/Ammonite/releases/download/$version/3.2-$version#/amm.bat"
     }
 }

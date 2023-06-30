@@ -26,15 +26,6 @@
                     "JetBrains\\IDEA"
                 ]
             ]
-        },
-        "32bit": {
-            "bin": "IDE\\bin\\idea.exe",
-            "shortcuts": [
-                [
-                    "IDE\\bin\\idea.exe",
-                    "JetBrains\\IDEA"
-                ]
-            ]
         }
     },
     "persist": [

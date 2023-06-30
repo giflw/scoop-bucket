@@ -8,11 +8,6 @@
             "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/13.1.0-rt_v11-rev1/x86_64-13.1.0-release-posix-seh-ucrt-rt_v11-rev1.7z",
             "hash": "da69a72f8f7e021a738b5beb45c08398cc042cca8f8573d0f2ae263e65f5752a",
             "extract_dir": "mingw64"
-        },
-        "32bit": {
-            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/13.1.0-rt_v11-rev1/i686-13.1.0-release-posix-dwarf-ucrt-rt_v11-rev1.7z",
-            "hash": "63c4ada31dca519cd1894e19381afaed75d88d36e5891be94268b07f95171d0c",
-            "extract_dir": "mingw32"
         }
     },
     "post_install": "Copy-Item \"$dir\\bin\\mingw32-make.exe\" \"$dir\\bin\\make.exe\"",
@@ -26,9 +21,6 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/$version/x86_64-$match1-release-posix-seh-ucrt-$matchBuild.7z"
-            },
-            "32bit": {
-                "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/$version/i686-$match1-release-posix-dwarf-ucrt-$matchBuild.7z"
             }
         }
     }

@@ -8,11 +8,6 @@
             "url": "https://media.inkscape.org/dl/resources/file/inkscape-1.2.2_2022-12-09_732a01da63-x64.7z",
             "hash": "2b12cb72061cdfca5ac9570ca102fb871ef582880c1dad09bae88b5f9f02ed6f",
             "extract_dir": "inkscape-1.2.2_2022-12-09_732a01da63-x64"
-        },
-        "32bit": {
-            "url": "https://media.inkscape.org/dl/resources/file/inkscape-1.2.2_2022-12-09_732a01da63-x86.7z",
-            "hash": "94050240c71796e1472a803b5b5727cb1903ae981bae9fc8d77245393cf68e30",
-            "extract_dir": "inkscape-1.2.2_2022-12-09_732a01da63-x86"
         }
     },
     "bin": [
@@ -43,13 +38,6 @@
                 "extract_dir": "$matchCleanfilename-x64",
                 "hash": {
                     "url": "https://media.inkscape.org/media/resources/sigs/$matchCleanfilename-x64.7z.sha256"
-                }
-            },
-            "32bit": {
-                "url": "https://media.inkscape.org/dl/resources/file/$matchCleanfilename-x86.7z",
-                "extract_dir": "$matchCleanfilename-x86",
-                "hash": {
-                    "url": "https://media.inkscape.org/media/resources/sigs/$matchCleanfilename-x86.7z.sha256"
                 }
             }
         }
