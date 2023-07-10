@@ -6,8 +6,8 @@
     "suggest": {
         "JDK": "java/openjdk"
     },
-    "url": "https://github.com/lihaoyi/Ammonite/releases/download/2.5.9/2.12-2.5.9#/amm.bat",
-    "hash": "ecdc6d1c5f46ad8335b70456a4bb26ee5706cf820920f3ee72efad73d5a4a0d9",
+    "url": "https://github.com/lihaoyi/Ammonite/releases/download/2.5.9/3.2-2.5.9#/amm.bat",
+    "hash": "46526cf213b29328c4bb64b4c27f701b25aff7ccb0f0d0336871fbddb4a3714e",
     "bin": "amm.bat",
     "checkver": {
         "github": "https://github.com/lihaoyi/Ammonite"
