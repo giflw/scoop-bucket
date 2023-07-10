@@ -5,6 +5,7 @@
     "license": "MIT",
     "notes": "This manifest installs Visual Studio Codium: Free/Libre Open Source Software Binaries of VS Code",
 	"url": "https://raw.githubusercontent.com/giflw/scoop-bucket/master/bucket/vscode.json",
+	"hash": "124beb59698438a1e450863e8dafc90d98e49f5968a80c292383bcd390bf85d5",
     "depends": "vscodium",
     "checkver": "github",
     "autoupdate": {
