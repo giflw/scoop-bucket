@@ -8,9 +8,9 @@
     "hash": "124beb59698438a1e450863e8dafc90d98e49f5968a80c292383bcd390bf85d5",
     "depends": "vscodium",
     "pre_uninstall": [
-		"Write-Output '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'",
+        "Write-Output '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'",
         "Write-Output 'To uninstall VSCodium run scoop uninstall vscodium'",
-		"Write-Output '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'"
+        "Write-Output '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'"
     ],
     "checkver": "github",
     "autoupdate": {
