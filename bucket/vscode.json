@@ -1,11 +1,19 @@
 {
+    "version": "1.80.0.23188",
     "description": "Lightweight but powerful source code editor",
     "homepage": "https://github.com/VSCodium/vscodium",
     "license": "MIT",
-    "notes": [
-        "This manifest installs Visual Studio Codium: Free/Libre Open Source Software Binaries of VS Code"
-    ],
-    "depends": [
-        "vscodium"
-    ]
+    "notes": "This manifest installs Visual Studio Codium: Free/Libre Open Source Software Binaries of VS Code",
+    "depends": "vscodium",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/VSCodium/vscodium/releases/download/$version/VSCodium-win32-x64-$version.zip"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
 }
