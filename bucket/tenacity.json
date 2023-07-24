@@ -5,10 +5,12 @@
     "license": "GPL-2.0",
     "url": "https://codeberg.org/attachments/f11d8999-1a5e-4c2e-a699-d0fc6ef84a6d#dl.zip",
     "hash": "76c269993b77e68996bf1c3298f810f484c1462f64cd2ec30953f82e2a3fdbd8",
-    "bin": "Release/Tenacity.exe",
+    "extract_dir": "Release",
+    "pre_uninstall": "scoop uninstall tenacity-ffmpeg",
+    "bin": "Tenacity.exe",
     "shortcuts": [
         [
-            "Release/Tenacity.exe",
+            "Tenacity.exe",
             "Tenacity"
         ]
     ],
