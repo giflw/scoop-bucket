@@ -1,12 +1,12 @@
 {
-    "version": "5.4.8",
+    "version": "5.4.5",
     "description": "Interactive function plotting utility",
     "homepage": "http://www.gnuplot.info",
     "license": "gnuplot",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.8/gp548-win64-mingw.7z",
-            "hash": "sha1:bcfec8059feb31cee3bbdaed19ca16e572f820b6"
+            "url": "https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.5/gp545-win64-mingw.7z",
+            "hash": "sha1:ca29d0beb8e7354219871c46c4c7b40f3b3d0da3"
         }
     },
     "extract_dir": "gnuplot",
