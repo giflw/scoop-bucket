@@ -15,7 +15,7 @@
         "Move-Item -Force \"$phpDir\\cli\\php-new.ini\" \"$phpDir\\cli\\php.ini\"",
         "Remove-Item \"$dir\\*\" -Include *.dll -Exclude *_72_ts_x64*"
     ],
-    "pre_install": [
+    "pre_uninstall": [
         "$phpDir = \"${dir}\".Replace('php72-sqlsrv', 'php72')",
         "$extDir = \"${phpDir}\\ext\"",
         "(Get-Content \"$phpDir\\cli\\php.ini\").Replace(\"extension=pdo_sqlsrv_72_ts_x64\nextension=sqlsrv_72_ts_x64\n\", \"\") -join \"`n\"  | Set-Content -NoNewLine \"$phpDir\\cli\\php-new.ini\"",
