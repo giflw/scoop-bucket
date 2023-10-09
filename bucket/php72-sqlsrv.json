@@ -19,8 +19,8 @@
         "$phpDir = \"${dir}\".Replace('php72-sqlsrv', 'php72')",
         "$extDir = \"${phpDir}\\ext\"",
         "(Get-Content \"$phpDir\\cli\\php.ini\").Replace(\"extension=pdo_sqlsrv_72_ts_x64\nextension=sqlsrv_72_ts_x64\n\", \"\") -join \"`n\"  | Set-Content -NoNewLine \"$phpDir\\cli\\php-new.ini\"",
-        "Move-Item -Force \"$phpDir\\cli\\php-new.ini\" \"$phpDir\\cli\\php.ini\""
+        "Move-Item -Force \"$phpDir\\cli\\php-new.ini\" \"$phpDir\\cli\\php.ini\"",
         "Remove-Item \"$dir\\php_pdo_sqlsrv_72_ts_x64.dll\" -PassThru",
-        "Remove-Item \"$dir\\php_sqlsrv_72_ts_x64.dll\" \"$extDir\" -PassThru",
+        "Remove-Item \"$dir\\php_sqlsrv_72_ts_x64.dll\" \"$extDir\" -PassThru"
     ]
 }
