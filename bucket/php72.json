@@ -23,7 +23,10 @@
     ],
     "post_install": [
         "# Enable extensions to be found in installation-relative folder (the default is to search C:/php)",
-        "(Get-Content \"$dir\\cli\\php.ini\") | % { $_ -replace ';\\s?(extension_dir = \"ext\")', '$1' } | Set-Content \"$dir\\cli\\php.ini\""
+        "(Get-Content \"$dir\\cli\\php.ini\") | % { $_ -replace ';\\s?(extension_dir = \"ext\")', '$1' } | Set-Content \"$dir\\cli\\php.ini\"",
+        "$ini = (Get-Content \"$dir\\cli\\php.ini\")",
+        "foreach ($ext in ('bz2', 'curl', 'fileinfo', 'gd2', 'gettext', 'intl', 'imap', 'ldap', 'mbstring', 'exif', 'openssl', 'pdo_mysql', 'pdo_odbc', 'pdo_pgsql', 'pdo_sqlite', 'tidy', 'xsl')) { $ini = $ini.Replace(\";extension=${ext}\", \"extension=${ext}\") -join \"`n\" }",
+        "$ini | Set-Content \"$dir\\cli\\php.ini\""
     ],
     "post_uninstall": [
         "scoop uninstall php72-sqlsrv"
