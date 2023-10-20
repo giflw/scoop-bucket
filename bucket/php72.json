@@ -7,7 +7,8 @@
         "url": "https://secure.php.net/license/"
     },
     "suggest": {
-        "vcredist": "extras/vcredist2022"
+        "vcredist": "extras/vcredist2022",
+        "laragon": "laragon"
     },
     "architecture": {
         "64bit": {
@@ -15,18 +16,13 @@
             "hash": "3a3d026aacf8da57ff01ace2f78f8f57494744bfb669f8545cc8f9c4ff0450a5"
         }
     },
-    "pre_install": [
-        "# Create directory for custom PHP configuration",
-        "if (!(Test-Path \"$dir\\cli\\conf.d\")) {",
-        "    (New-Item -Type directory \"$dir\\cli\\conf.d\") | Out-Null",
-        "}"
-    ],
     "post_install": [
         "# Enable extensions to be found in installation-relative folder (the default is to search C:/php)",
-        "(Get-Content \"$dir\\cli\\php.ini\") | % { $_ -replace ';\\s?(extension_dir = \"ext\")', '$1' } | Set-Content \"$dir\\cli\\php.ini\"",
-        "$ini = (Get-Content \"$dir\\cli\\php.ini\")",
+        "Copy-Item $dir\\php.ini-production $dir\\php.ini",
+        "(Get-Content \"$dir\\php.ini\") | % { $_ -replace ';\\s?(extension_dir = \"ext\")', '$1' } | Set-Content \"$dir\\php.ini\"",
+        "$ini = (Get-Content \"$dir\\php.ini\")",
         "foreach ($ext in ('bz2', 'curl', 'fileinfo', 'gd2', 'gettext', 'intl', 'imap', 'ldap', 'mbstring', 'exif', 'openssl', 'pdo_mysql', 'pdo_odbc', 'pdo_pgsql', 'pdo_sqlite', 'tidy', 'xsl')) { $ini = $ini.Replace(\";extension=${ext}\", \"extension=${ext}\") -join \"`n\" }",
-        "$ini | Set-Content \"$dir\\cli\\php.ini\""
+        "$ini | Set-Content \"$dir\\php.ini\""
     ],
     "post_uninstall": [
         "scoop uninstall php72-sqlsrv"
@@ -35,15 +31,5 @@
         ["php.exe", "php72"],
         ["php-cgi.exe", "php72-cgi"],
         ["phpdbg.exe", "php72dbg"]
-    ],
-    "persist": [
-        "cli",
-        [
-            "php.ini-production",
-            "cli\\php.ini"
-        ]
-    ],
-    "env_set": {
-        "PHP_INI_SCAN_DIR": "$dir\\cli;$dir\\cli\\conf.d;"
-    }
+    ]
 }
