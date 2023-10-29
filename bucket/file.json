@@ -1,12 +1,12 @@
 {
-    "version": "5.44",
+    "version": "5.45",
     "description": "Determine file type.",
     "homepage": "https://www.darwinsys.com/file",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/rkitover/file-windows/releases/download/v5.44/file_5.44-x86_64.7z",
-            "hash": "a5a18f480c69df11cdaad5d1b5b3217045a7da50d2f51ca7618eb0df4388c96f"
+            "url": "https://github.com/rkitover/file-windows/releases/download/v5.45/file_5.45-x86_64.7z",
+            "hash": "00f4f15e393382de741e934f34acbcdb10936a9a850aaa1e06ac75401d7b5340"
         }
     },
     "bin": "file.exe",
