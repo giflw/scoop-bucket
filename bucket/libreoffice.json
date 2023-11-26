@@ -1,5 +1,5 @@
 {
-    "version": "7.6.3.1",
+    "version": "7.6.3.2",
     "description": "Powerful and free office suite, a successor to OpenOffice(.org).",
     "homepage": "https://libreoffice.org/",
     "license": "MPL-2.0",
@@ -9,8 +9,8 @@
     "notes": "If you are upgrading from portable version, you can migrate settings by copying \"$persist_dir\\Data\" to \"%AppData%\\LibreOffice\"",
     "architecture": {
         "64bit": {
-            "url": "https://downloadarchive.documentfoundation.org/libreoffice/old/7.6.3.1/win/x86_64/LibreOffice_7.6.3.1_Win_x86-64.msi#/dl.msi_",
-            "hash": "e027411153aa32042dd03840d097416f8c124a4557e6b26d24dfd16a110c324e"
+            "url": "https://downloadarchive.documentfoundation.org/libreoffice/old/7.6.3.2/win/x86_64/LibreOffice_7.6.3.2_Win_x86-64.msi#/dl.msi_",
+            "hash": "65a1330abaddf31e4dd8cb9c1110f422a3edc828b8d5680bcd3ea8efa508ef3c"
         }
     },
     "pre_install": [
