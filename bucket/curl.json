@@ -1,13 +1,13 @@
 {
-    "version": "8.4.0_7",
+    "version": "8.5.0_1",
     "description": "Command line tool and library for transferring data with URLs",
     "homepage": "https://curl.se/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://curl.se/windows/dl-8.4.0_7/curl-8.4.0_7-win64-mingw.tar.xz",
-            "hash": "7f4dbc942a463167afbde1a8496c7515e91c4fb71bf895b2fb4ccb5379d81899",
-            "extract_dir": "curl-8.4.0_7-win64-mingw"
+            "url": "https://curl.se/windows/dl-8.5.0_1/curl-8.5.0_1-win64-mingw.tar.xz",
+            "hash": "e3adf78bb4a26c551e6f8bcf38a83f11906f672276b8da1476c7d14fc6a822eb",
+            "extract_dir": "curl-8.5.0_1-win64-mingw"
         }
     },
     "bin": "bin\\curl.exe",
