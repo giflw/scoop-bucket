@@ -7,9 +7,13 @@
         "64bit": {
             "url": "https://releases.hashicorp.com/vagrant/2.4.0/vagrant_2.4.0_windows_amd64.msi",
             "hash": "d8f62fce5de0f4b9fb1a4afece10faa6fafed41929ccfe7bb380f160358043e4"
+        },
+        "32bit": {
+            "url": "https://releases.hashicorp.com/vagrant/2.4.0/vagrant_2.4.0_windows_i686.msi",
+            "hash": "6c63fab066223e55f52e3eb58dd41876e877926e152f61aafb60bb2651c88c68"
         }
     },
-    "extract_dir": "HashiCorp/Vagrant",
+    "extract_dir": "Vagrant",
     "bin": "bin\\vagrant.exe",
     "checkver": {
         "url": "https://releases.hashicorp.com/vagrant/",
@@ -19,6 +23,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://releases.hashicorp.com/vagrant/$version/vagrant_$version_windows_amd64.msi"
+            },
+            "32bit": {
+                "url": "https://releases.hashicorp.com/vagrant/$version/vagrant_$version_windows_i686.msi"
             }
         },
         "hash": {
