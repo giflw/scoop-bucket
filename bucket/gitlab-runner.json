@@ -1,5 +1,5 @@
 {
-    "version": "16.10.0",
+    "version": "16.11.0",
     "description": "Run your jobs and send the results back to GitLab",
     "homepage": "https://docs.gitlab.com/runner/",
     "license": "MIT",
@@ -16,8 +16,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://gitlab-runner-downloads.s3.amazonaws.com/v16.10.0/binaries/gitlab-runner-windows-amd64.exe#/gitlab-runner.exe",
-            "hash": "232b3574704ca0b75d38dd998b2532832e70dcbdf79f36da5468e5115f19c229"
+            "url": "https://gitlab-runner-downloads.s3.amazonaws.com/v16.11.0/binaries/gitlab-runner-windows-amd64.exe#/gitlab-runner.exe",
+            "hash": "ffdc866378a4d457e8b9714d7c9416fbd961e9cc7e27d3b910776c297ff7eee9"
         }
     },
     "bin": "gitlab-runner.exe",
