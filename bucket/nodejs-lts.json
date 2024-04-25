@@ -1,36 +1,55 @@
 {
-    "version": "20.11.1",
+    "version": "20.12.2",
     "description": "As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. (Long Term Support)",
     "homepage": "https://nodejs.org",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1-win-x64.7z",
-            "hash": "fb9b5348259988a562a48eed7349e7e716c0bec78d98ad0a336b2993a8b3bf34",
-            "extract_dir": "node-v20.11.1-win-x64"
+            "url": "https://nodejs.org/dist/v20.12.2/node-v20.12.2-win-x64.7z",
+            "hash": "a92f5bb065bbe7b429e573b83604e8e039de3f0dac37e16674de0dea303c5283",
+            "extract_dir": "node-v20.12.2-win-x64"
+        },
+        "32bit": {
+            "url": "https://nodejs.org/dist/v20.12.2/node-v20.12.2-win-x86.7z",
+            "hash": "de8dd5dde38c3e2d5b4269534360414e4ae853496835226b4b1df567e4bf3d3c",
+            "extract_dir": "node-v20.12.2-win-x86"
+        },
+        "arm64": {
+            "url": "https://nodejs.org/dist/v20.12.2/node-v20.12.2-win-arm64.7z",
+            "hash": "ab4b990c2c1d4a55d565813e7a2f71669dc4d1005faa47185d30bde4416975ab",
+            "extract_dir": "node-v20.12.2-win-arm64"
         }
     },
-    "persist": [
-        "bin",
-        "cache"
+    "post_install": [
+        "# Set npm prefix to install modules inside bin and npm cache so they persist",
+        "Set-Content -Value \"prefix=$persist_dir\\bin`ncache=$persist_dir\\cache\" -Path \"$dir\\node_modules\\npm\\npmrc\""
     ],
     "env_add_path": [
         "bin",
         "."
     ],
-    "post_install": [
-        "# Set npm prefix to install modules inside bin and npm cache so they persist",
-        "Set-Content -Value \"prefix=$persist_dir\\bin`ncache=$persist_dir\\cache\" -Path \"$dir\\node_modules\\npm\\npmrc\""
+    "persist": [
+        "bin",
+        "cache"
     ],
     "checkver": {
-        "url": "https://nodejs.org/en/download/",
-        "regex": "LTS Version.*: <strong>([\\d.]+)</strong>"
+        "url": "https://nodejs.org/dist/index.json",
+        "jsonpath": "$..[?(@.lts != false)].version",
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://nodejs.org/dist/v$version/node-v$version-win-x64.7z",
                 "extract_dir": "node-v$version-win-x64"
+            },
+            "32bit": {
+                "url": "https://nodejs.org/dist/v$version/node-v$version-win-x86.7z",
+                "extract_dir": "node-v$version-win-x86"
+            },
+            "arm64": {
+                "url": "https://nodejs.org/dist/v$version/node-v$version-win-arm64.7z",
+                "extract_dir": "node-v$version-win-arm64"
             }
         },
         "hash": {

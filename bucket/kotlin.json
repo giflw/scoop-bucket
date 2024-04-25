@@ -10,10 +10,12 @@
     "hash": "93137d3aab9afa9b27cb06a824c2324195c6b6f6179d8a8653f440f5bd58be88",
     "extract_dir": "kotlinc",
     "bin": [
+        "bin\\kapt.bat",
         "bin\\kotlin.bat",
         "bin\\kotlinc.bat",
         "bin\\kotlinc-js.bat",
-        "bin\\kotlinc-jvm.bat"
+        "bin\\kotlinc-jvm.bat",
+        "bin\\kotlin-dce-js.bat"
     ],
     "env_set": {
         "KOTLIN_HOME": "$dir"
