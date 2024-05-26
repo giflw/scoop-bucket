@@ -1,14 +1,14 @@
 {
-    "version": "2.5.12",
+    "version": "2.5.13",
     "description": "Asciidoctor integration & API for Java and other JVM languages",
     "homepage": "https://asciidoctor.org/docs/asciidoctorj",
     "license": "Apache-2.0",
     "suggest": {
         "JDK": "java/openjdk"
     },
-    "url": "https://repo1.maven.org/maven2/org/asciidoctor/asciidoctorj/2.5.12/asciidoctorj-2.5.12-bin.zip",
-    "hash": "450b7a8ee177b7050e4c07d0b5bfece2930d977f163a72f5343222753a937bb9",
-    "extract_dir": "asciidoctorj-2.5.12",
+    "url": "https://repo1.maven.org/maven2/org/asciidoctor/asciidoctorj/2.5.13/asciidoctorj-2.5.13-bin.zip",
+    "hash": "67b420378c2887fdb330de2eb2d614a249224532eccc26c6f2ebe8330f878c38",
+    "extract_dir": "asciidoctorj-2.5.13",
     "bin": "bin\\asciidoctorj.bat",
     "checkver": {
         "url": "https://github.com/asciidoctor/asciidoctorj/releases",
