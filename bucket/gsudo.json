@@ -1,5 +1,5 @@
 {
-    "version": "2.4.4",
+    "version": "2.5.1",
     "description": "A Sudo for Windows",
     "homepage": "https://gerardog.github.io/gsudo",
     "license": "MIT",
@@ -10,19 +10,19 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/gerardog/gsudo/releases/download/v2.4.4/gsudo.setup.x64.msi",
-            "hash": "eb195f1433f1576c822eeb29fe2b228747c2baadc70c1b4d7a7be8c63118b4cf",
-            "extract_dir": "PFiles64\\gsudo\\2.4.4"
+            "url": "https://github.com/gerardog/gsudo/releases/download/v2.5.1/gsudo.setup.x64.msi",
+            "hash": "e7c13e323a04b568ecfeab707a84279625c70036fbd9ce1ab41d0387990606c1",
+            "extract_dir": "PFiles64\\gsudo\\2.5.1"
         },
         "32bit": {
-            "url": "https://github.com/gerardog/gsudo/releases/download/v2.4.4/gsudo.setup.x86.msi",
-            "hash": "0412c5e62e60b9af478cc5bf8b1a8a5f02f4cb27314723f85d25ac7ec69310b8",
-            "extract_dir": "PFiles\\gsudo\\2.4.4"
+            "url": "https://github.com/gerardog/gsudo/releases/download/v2.5.1/gsudo.setup.x86.msi",
+            "hash": "2d0d1a9940226b5451716a5fac6452ef40c95f4c3b362f4f22427484b53273f2",
+            "extract_dir": "PFiles\\gsudo\\2.5.1"
         },
         "arm64": {
-            "url": "https://github.com/gerardog/gsudo/releases/download/v2.4.4/gsudo.setup.arm64.msi",
-            "hash": "d9f85e91fd6ada417ae1bee0ce5666535d8a7641a864351bc636b03ea7ea4f16",
-            "extract_dir": "PFiles64\\gsudo\\2.4.4"
+            "url": "https://github.com/gerardog/gsudo/releases/download/v2.5.1/gsudo.setup.arm64.msi",
+            "hash": "bf58ed4e72007cb37d30fe91658d28826d0d4ac2712debc545c8f82a2412bee3",
+            "extract_dir": "PFiles64\\gsudo\\2.5.1"
         }
     },
     "bin": [
