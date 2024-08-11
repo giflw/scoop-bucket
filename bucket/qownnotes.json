@@ -1,12 +1,12 @@
 {
-    "version": "24.8.2",
+    "version": "24.8.4",
     "description": "Plain-text notepad and todo-list manager with markdown support and Nextcloud / ownCloud integration",
     "homepage": "https://www.qownnotes.org/",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pbek/QOwnNotes/releases/download/v24.8.2/QOwnNotes.zip",
-            "hash": "f707747f5a8bbe431825d5fc261905cf648072cce9bbb15029496dab82656170"
+            "url": "https://github.com/pbek/QOwnNotes/releases/download/v24.8.4/QOwnNotes.zip",
+            "hash": "b2eb77e44b650a22a2aaa8226e282e58a1f7e792c692894843be429ffc61961c"
         }
     },
     "shortcuts": [
