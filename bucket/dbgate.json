@@ -1,5 +1,5 @@
 {
-    "version": "5.3.4",
+    "version": "5.4.3",
     "description": "Database manager for MySQL, PostgreSQL, SQL Server, MongoDB, SQLite and others. Runs under Windows, Linux, Mac or as web application.",
     "homepage": "https://github.com/dbgate/dbgate",
     "license": "MIT",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dbgate/dbgate/releases/download/v5.3.4/dbgate-5.3.4-win_x64.zip",
-            "hash": "ddb738f472d1a2d75341db9381adb6d933489c7674c01cfa252e04e80ae4f944"
+            "url": "https://github.com/dbgate/dbgate/releases/download/v5.4.3/dbgate-5.4.3-win_x64.zip",
+            "hash": "2bb72dee87924b2b1b14fda6f1433a27181a8e87f0700e582e18c25d56cf7fd3"
         }
     },
     "##env_add_path": "bin",
