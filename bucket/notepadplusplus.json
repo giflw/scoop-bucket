@@ -1,13 +1,13 @@
 {
-    "version": "8.7.1",
+    "version": "8.7.2",
     "description": "A free source code editor and Notepad replacement that supports several languages.",
     "homepage": "https://notepad-plus-plus.org",
     "license": "GPL-3.0-or-later",
     "notes": "Add Notepad++ as a context menu option by running: reg import \"$dir\\install-context.reg\"",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.7.1/npp.8.7.1.portable.x64.zip",
-            "hash": "42fcb63888bf5bb0fb8794fd2e0bffe5a0628defe6083fcd6b1d3c53490a4970"
+            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.7.2/npp.8.7.2.portable.x64.zip",
+            "hash": "f747a90abb20de657fabf263f47ede2ce158a6f707b68f231a89834d01a56ac3"
         }
     },
     "pre_install": [
