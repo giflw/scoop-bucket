@@ -1,12 +1,12 @@
 {
-    "version": "14.2.0-rt_v12-rev0",
+    "version": "14.2.0-rt_v12-rev1",
     "description": "Minimalistic GNU for Windows is a runtime environment for GCC, GDB, make and related binutils.",
     "homepage": "https://www.mingw-w64.org",
     "license": "ZPL-2.1",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/14.2.0-rt_v12-rev0/x86_64-14.2.0-release-posix-seh-ucrt-rt_v12-rev0.7z",
-            "hash": "0f1afc3b48f66dda68fbfb7b8b0f1d22b831396fbe1e3dea776745f32d930b24",
+            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/14.2.0-rt_v12-rev1/x86_64-14.2.0-release-posix-seh-ucrt-rt_v12-rev1.7z",
+            "hash": "9fa5768ba0e628203c4631d447ce533335cdd1fd9c318d84c774e729efa4edad",
             "extract_dir": "mingw64"
         }
     },
