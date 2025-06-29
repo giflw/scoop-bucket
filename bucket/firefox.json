@@ -1,5 +1,5 @@
 {
-    "version": "139.0.4",
+    "version": "140.0.2",
     "description": "Popular open source web browser.",
     "homepage": "https://www.mozilla.org/firefox/",
     "license": "MPL-2.0",
@@ -11,16 +11,16 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/139.0.4/win64/en-US/Firefox%20Setup%20139.0.4.exe#/dl.7z",
-            "hash": "sha512:5788c91a04c88e1dab6b00ab14d3b693356bc524ac920c8b8b48ba76b0c8279b0a751a7155c6ff4e95772d7bcc62d3fa7773ab829b025367d70efab5dad7e829"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/140.0.2/win64/en-US/Firefox%20Setup%20140.0.2.exe#/dl.7z",
+            "hash": "sha512:2789a5b9e001aa33affbd76a31b9ebd74401db1bce3cc0093d6f58062730663cb54768da3bf9cca5ebb1412763a6913226a7ec8627198b236af65220664f60f3"
         },
         "32bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/139.0.4/win32/en-US/Firefox%20Setup%20139.0.4.exe#/dl.7z",
-            "hash": "sha512:adb4c32346d3b212c19e8bc1803a1bc77e0eb89d8744e02930302f4e0ccbe9ab5841e63e59cff8ab2a32fc40a7fbff8819b5cef21bae8bdc31bb571d64944c39"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/140.0.2/win32/en-US/Firefox%20Setup%20140.0.2.exe#/dl.7z",
+            "hash": "sha512:88692ed1e78951efd87e7f931e61ab4b847cb1cc324b59c17c05925c620c79fbdd827b50cb072046da3e21621e908daa4306d97e4fc7c954b32d01177ee16524"
         },
         "arm64": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/139.0.4/win64-aarch64/en-US/Firefox%20Setup%20139.0.4.exe#/dl.7z",
-            "hash": "sha512:6b3d3ee410e4d061a292438c79b3c476afc4238fe05c6e3789946e181404faa2627cb3b46f1d3a11bcc22b8dca05e9fc8a55da6b51b4f939e7f25ebfa0a2325a"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/140.0.2/win64-aarch64/en-US/Firefox%20Setup%20140.0.2.exe#/dl.7z",
+            "hash": "sha512:0b7e5e25361e43f5fb27d1390d4b00d1ce092b4d19bf593fcace1083e29cc251015f4b7ca9f698625fff42b245ba2257959f8bf0093779a9b6db504479bde7b5"
         }
     },
     "extract_dir": "core",
