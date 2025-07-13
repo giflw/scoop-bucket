@@ -1,12 +1,12 @@
 {
-    "version": "12.10",
+    "version": "12.11",
     "description": "See and edit data and structures from computers running one of the database systems MariaDB, MySQL, Microsoft SQL or PostgreSQL.",
     "homepage": "https://www.heidisql.com/",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://www.heidisql.com/downloads/releases/HeidiSQL_12.10_64_Portable.zip",
-            "hash": "a7b0e40acc85900ff5ca63769e702acaa06e81ae658b7958e1bc794ae635fd7a"
+            "url": "https://www.heidisql.com/downloads/releases/HeidiSQL_12.11_64_Portable.zip",
+            "hash": "edb199a2501726b87b3908f83c3e33cc1057c483c78b091dea1ed9a8d535131d"
         }
     },
     "pre_install": "if (!(Test-Path \"$persist_dir\\portable_settings.txt\")) { New-Item \"$dir\\portable_settings.txt\" | Out-Null }",
