@@ -1,5 +1,5 @@
 {
-    "version": "2.50.1.windows.1",
+    "version": "2.50.1",
     "description": "Distributed version control system",
     "homepage": "https://gitforwindows.org",
     "license": "GPL-2.0-only",
@@ -14,11 +14,15 @@
         "64bit": {
             "url": "https://github.com/git-for-windows/git/releases/download/v2.50.1.windows.1/PortableGit-2.50.1-64-bit.7z.exe#/dl.7z",
             "hash": "c45a7dfa2bde34059f6dbd85f49a95d73d5aea29305f51b79595e56e4f323a3d"
+        },
+        "arm64": {
+            "url": "https://github.com/git-for-windows/git/releases/download/v2.50.1.windows.1/PortableGit-2.50.1-arm64.7z.exe#/dl.7z",
+            "hash": "fa1c1df0d8bc9ccd36105964cfd2e088b50f3db974906c926dd1a4d271e1f90b"
         }
     },
     "post_install": [
         "'install-context', 'uninstall-context', 'install-file-associations', 'uninstall-file-associations' | ForEach-Object {",
-        "    $reg_file_in  = \"$bucketsdir\\giflw\\scripts\\git\\$_.reg\"",
+        "    $reg_file_in  = \"$bucketsdir\\main\\scripts\\git\\$_.reg\"",
         "    $reg_file_out = \"$dir\\$_.reg\"",
         "    $git_root     = \"$dir\".Replace('\\', '\\\\')",
         "    if (Test-Path $reg_file_in) {",
@@ -34,31 +38,12 @@
     "bin": [
         "bin\\sh.exe",
         "bin\\bash.exe",
-        [
-            "bin\\bash.exe",
-            "gbash"
-        ],
         "cmd\\git.exe",
         "cmd\\gitk.exe",
         "cmd\\git-gui.exe",
         "cmd\\scalar.exe",
         "usr\\bin\\tig.exe",
-        "git-bash.exe",
-        "usr\\bin\\gpg.exe",
-        "usr\\bin\\gpgconf.exe",
-        "usr\\bin\\ssh.exe",
-        "usr\\bin\\sshd.exe",
-        "usr\\bin\\scp.exe",
-        "usr\\bin\\sftp.exe",
-        "usr\\bin\\ssh-add.exe",
-        "usr\\bin\\ssh-agent.exe",
-        [
-            "bin/sh.exe",
-            "ssh-copy-id",
-            "ssh-copy-id"
-        ],
-        "usr\\bin\\ssh-keygen.exe",
-        "usr\\bin\\ssh-keyscan.exe"
+        "git-bash.exe"
     ],
     "shortcuts": [
         [
@@ -75,17 +60,21 @@
         "GIT_INSTALL_ROOT": "$dir"
     },
     "checkver": {
-        "github": "https://github.com/git-for-windows/git",
-        "regex": "tag/v([\\d.]+\\.windows\\.\\d)"
+        "url": "https://api.github.com/repositories/23216272/releases/latest",
+        "jsonpath": "$..browser_download_url",
+        "regex": "download/v(?<tag>[\\d.]+windows\\.\\d)/PortableGit-([\\d.]+)-64"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/git-for-windows/git/releases/download/v$version/PortableGit-$matchHead-64-bit.7z.exe#/dl.7z"
+                "url": "https://github.com/git-for-windows/git/releases/download/v$matchTag/PortableGit-$version-64-bit.7z.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/git-for-windows/git/releases/download/v$matchTag/PortableGit-$version-arm64.7z.exe#/dl.7z"
             }
         },
         "hash": {
-            "url": "https://github.com/git-for-windows/git/releases/tag/v$version",
+            "url": "https://github.com/git-for-windows/git/releases/tag/v$matchTag",
             "regex": "(?s)$basename.*?$sha256"
         }
     }
