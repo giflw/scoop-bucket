@@ -1,5 +1,5 @@
 {
-    "version": "16.2",
+    "version": "17.4",
     "description": "Object-relational database management system based on POSTGRES.",
     "homepage": "https://www.postgresql.org",
     "license": "PostgreSQL",
@@ -11,8 +11,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://get.enterprisedb.com/postgresql/postgresql-16.2-1-windows-x64-binaries.zip#/dl.zip_",
-            "hash": "c510b3058c161479bfbe0aeac878ca682b344fd9385c58a359690147a4ca1a6c"
+            "url": "https://get.enterprisedb.com/postgresql/postgresql-17.4-1-windows-x64-binaries.zip#/dl.zip_",
+            "hash": "80bb49e80df0100dd52e7b3c647896f8d8cfde760b6473e5180819c8df4b23c4"
         }
     },
     "pre_install": [
@@ -39,8 +39,8 @@
     },
     "persist": "data",
     "checkver": {
-        "url": "https://www.enterprisedb.com/download-postgresql-binaries",
-        "regex": "Binaries from installer .+?Version ([\\d.]+)"
+        "url": "https://www.postgresql.org/ftp/source/",
+        "regex": "v(?<version>[\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

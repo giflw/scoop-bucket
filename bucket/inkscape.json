@@ -6,13 +6,19 @@
     "architecture": {
         "64bit": {
             "url": "https://media.inkscape.org/dl/resources/file/inkscape-1.4.2_2025-05-13_f4327f4-x64.7z",
-            "hash": "757e0358512630e65505a4cca89885369087f2908469439bc41b5a346604cbd4",
-            "extract_dir": "inkscape-1.4.2_2025-05-13_f4327f4-x64"
+            "hash": "757e0358512630e65505a4cca89885369087f2908469439bc41b5a346604cbd4"
         }
     },
+    "extract_dir": "inkscape",
     "bin": [
-        "bin\\inkscapecom.com",
-        "bin\\inkviewcom.com"
+        [
+            "bin\\inkscape.com",
+            "inkscape"
+        ],
+        [
+            "bin\\inkview.com",
+            "inkview"
+        ]
     ],
     "shortcuts": [
         [
@@ -35,7 +41,6 @@
         "architecture": {
             "64bit": {
                 "url": "https://media.inkscape.org/dl/resources/file/$matchCleanfilename-x64.7z",
-                "extract_dir": "$matchCleanfilename-x64",
                 "hash": {
                     "url": "https://media.inkscape.org/media/resources/sigs/$matchCleanfilename-x64.7z.sha256"
                 }

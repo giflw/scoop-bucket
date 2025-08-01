@@ -8,6 +8,14 @@
         "64bit": {
             "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.8.3/npp.8.8.3.portable.x64.zip",
             "hash": "1976a4f473ca8025572652542c28ec80226d503c6fc5187e31ee826f9947bff1"
+        },
+        "32bit": {
+            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.8.3/npp.8.8.3.portable.zip",
+            "hash": "bbe1761c26529cff1bf82a8b50e19c309cd2629fea568605733755e03660f6c8"
+        },
+        "arm64": {
+            "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.8.3/npp.8.8.3.portable.arm64.zip",
+            "hash": "2a480885cea729fc3a9b2e7ff28945b0570da6ad59a4046159bda9be76a8e453"
         }
     },
     "pre_install": [
@@ -18,12 +26,16 @@
     ],
     "post_install": [
         "'install-context', 'uninstall-context' | ForEach-Object {",
-        "    if (Test-Path \"$bucketsdir\\giflw\\scripts\\notepadplusplus\\$_.reg\") {",
+        "    if (Test-Path \"$bucketsdir\\extras\\scripts\\notepadplusplus\\$_.reg\") {",
         "        $nppPath = \"$dir\\notepad++.exe\".Replace('\\', '\\\\')",
-        "        $content = (Get-Content \"$bucketsdir\\giflw\\scripts\\notepadplusplus\\$_.reg\").Replace('$npp', $nppPath)",
+        "        $content = (Get-Content \"$bucketsdir\\extras\\scripts\\notepadplusplus\\$_.reg\").Replace('$npp', $nppPath)",
         "        if ($global) { $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE') }",
         "        Set-Content \"$dir\\$_.reg\" $content -Encoding Ascii -Force",
         "    }",
+        "}",
+        "# Update shipped plugins",
+        "if (Test-Path \"$dir\\plugins.original\") {",
+        "    Copy-Item -Recurse \"$dir\\plugins.original\\*\" \"$dir\\plugins\\\" -Force",
         "}"
     ],
     "uninstaller": {
@@ -60,6 +72,12 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v$version/npp.$version.portable.x64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v$version/npp.$version.portable.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v$version/npp.$version.portable.arm64.zip"
             }
         },
         "hash": {

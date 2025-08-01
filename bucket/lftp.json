@@ -7,6 +7,10 @@
         "64bit": {
             "url": "https://f001.backblazeb2.com/file/nwgat-cdn/lftp/win64/lftp-4.9.2.win64-openssl.zip",
             "hash": "31f7464f297a0af6529e1b7a3c9602f2fd2694f5402cedc52c20551108e1d02a"
+        },
+        "32bit": {
+            "url": "https://f001.backblazeb2.com/file/nwgat-cdn/lftp/win32/lftp-4.9.2.win32-openssl.zip",
+            "hash": "48293cf32142dbb07f2b935b28b83bacc367fca5328bae03250b7bf6306fabdd"
         }
     },
     "bin": "bin\\lftp.exe",
@@ -15,6 +19,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://f001.backblazeb2.com/file/nwgat-cdn/lftp/win64/lftp-$version.win64-openssl.zip"
+            },
+            "32bit": {
+                "url": "https://f001.backblazeb2.com/file/nwgat-cdn/lftp/win32/lftp-$version.win32-openssl.zip"
             }
         }
     }

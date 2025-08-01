@@ -7,6 +7,10 @@
         "64bit": {
             "url": "https://releases.hashicorp.com/packer/1.14.0/packer_1.14.0_windows_amd64.zip",
             "hash": "f4a5b055f71103d36cc170d20f063f3a51e74ecab8f1865288a20544c4b652a1"
+        },
+        "32bit": {
+            "url": "https://releases.hashicorp.com/packer/1.14.0/packer_1.14.0_windows_386.zip",
+            "hash": "a6cac9f18ea9b605203c855ef2ae5be4db1ae535a4b14aa21d0a59ac11120748"
         }
     },
     "bin": "packer.exe",
@@ -18,6 +22,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://releases.hashicorp.com/packer/$version/packer_$version_windows_amd64.zip"
+            },
+            "32bit": {
+                "url": "https://releases.hashicorp.com/packer/$version/packer_$version_windows_386.zip"
             }
         },
         "hash": {

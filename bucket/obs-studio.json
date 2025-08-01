@@ -1,5 +1,5 @@
 {
-    "version": "30.1.2",
+    "version": "31.1.2",
     "description": "Video recording and live streaming software",
     "homepage": "https://obsproject.com",
     "license": "GPL-2.0-only",
@@ -9,8 +9,18 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-30.1.2.zip",
-            "hash": "35be787de3169413eb5e6b6dc8b493c3f1973dd3f8366144b54575f897906dc0",
+            "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-31.1.2-Windows-x64.zip",
+            "hash": "9513cd402936593a6a5500da5d2bd49e6cd04dce05509c7b7f48dd25c391d2d8",
+            "shortcuts": [
+                [
+                    "bin\\64bit\\obs64.exe",
+                    "OBS Studio"
+                ]
+            ]
+        },
+        "arm64": {
+            "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-31.1.2-Windows-arm64.zip",
+            "hash": "1e6740c7ddb7b9ee0049d402b9922df95ff2fdb4d0415eafb6e57556d8af648d",
             "shortcuts": [
                 [
                     "bin\\64bit\\obs64.exe",
@@ -31,14 +41,20 @@
         "Remove-Item \"$dir\\obs-plugins.original\" -Recurse -Force"
     ],
     "checkver": {
-        "url": "https://obsproject.com/download",
-        "regex": "OBS-Studio-([\\d.]+)(-Full)?\\.zip"
+        "github": "https://github.com/obsproject/obs-studio"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-$version.zip"
+                "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-$version-Windows-x64.zip"
+            },
+            "arm64": {
+                "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-$version-Windows-arm64.zip"
             }
+        },
+        "hash": {
+            "url": "https://github.com/obsproject/obs-studio/releases/$version",
+            "regex": "(?sm)$basename.*?$sha256"
         }
     }
 }

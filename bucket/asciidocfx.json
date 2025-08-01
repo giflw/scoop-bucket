@@ -3,6 +3,9 @@
     "description": "A book/document editor to build PDF, Epub, Mobi and HTML books, documents and slides.",
     "homepage": "https://asciidocfx.com",
     "license": "Apache-2.0",
+    "suggest": {
+        "PlantUML Support": "graphviz"
+    },
     "depends": "graphviz",
     "architecture": {
         "64bit": {
