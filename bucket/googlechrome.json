@@ -1,5 +1,5 @@
 {
-    "version": "143.0.7499.110",
+    "version": "143.0.7499.170",
     "description": "Fast, secure, and free web browser, built for the modern web.",
     "homepage": "https://www.google.com/chrome/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.google.com/release2/chrome/mnpsb6lkzuvjrtl77fwf3ttai4_143.0.7499.110/143.0.7499.110_chrome_installer_uncompressed.exe#/dl.7z",
-            "hash": "81a9ea9b322d7437df4c7bba10f45fba203b69171a92a3a4997c454fe54d8027"
+            "url": "https://dl.google.com/release2/chrome/ac7ajtusblhl4xhi5sryyfujuqqa_143.0.7499.170/143.0.7499.170_chrome_installer_uncompressed.exe#/dl.7z",
+            "hash": "6a9f31038779de6c973fc02fad450b514a6c70c25825cc812f2ba53740203dce"
         },
         "32bit": {
-            "url": "https://dl.google.com/release2/chrome/adprpgy6eqxk2k5wzoptkhgncieq_143.0.7499.110/143.0.7499.110_chrome_installer_uncompressed.exe#/dl.7z",
-            "hash": "03540d81389c1fac3bff586f9de21571c3b3bd80768c6641b0677e8a6ad70a38"
+            "url": "https://dl.google.com/release2/chrome/ac4odgd56567adajfb43z6weimbq_143.0.7499.170/143.0.7499.170_chrome_installer_uncompressed.exe#/dl.7z",
+            "hash": "45e431608c9489c8f6f111e7bd8ce51dbef0d23307e41e994a08ae36457cbaf5"
         }
     },
     "extract_dir": "Chrome-bin",
