@@ -1,13 +1,13 @@
 {
-    "version": "3.0.6",
+    "version": "3.0.8",
     "description": "Ammonite lets you use the Scala language for scripting purposes: in the REPL, as scripts, as a library, or as a standalone systems shell.",
     "homepage": "https://ammonite.io",
     "license": "MIT",
     "suggest": {
         "JDK": "java/openjdk"
     },
-    "url": "https://github.com/lihaoyi/Ammonite/releases/download/3.0.6/3.3-3.0.6#/amm.bat",
-    "hash": "0be4a18ee17512717be5c0cdd28dbcabc01fc3bc30a1de0452c2e47536f9e30a",
+    "url": "https://github.com/lihaoyi/Ammonite/releases/download/3.0.8/3.3-3.0.8#/amm.bat",
+    "hash": "f78dfe9606dc2cf7345b5afa068f51f3b72e0544ed371b3804700b584a0ec11e",
     "bin": "amm.bat",
     "checkver": {
         "url": "https://api.github.com/repos/lihaoyi/Ammonite/releases",
