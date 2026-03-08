@@ -1,5 +1,5 @@
 {
-    "version": "2026.2.23",
+    "version": "2026.3.5",
     "description": "Polyglot tool version manager and task runner",
     "homepage": "https://mise.jdx.dev/",
     "license": "MIT",
@@ -13,12 +13,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jdx/mise/releases/download/v2026.2.23/mise-v2026.2.23-windows-x64.zip",
-            "hash": "c17a62ef2a510add6484f6a51a97d400fe033059b0b88f51db790bc6d6c19066"
+            "url": "https://github.com/jdx/mise/releases/download/v2026.3.5/mise-v2026.3.5-windows-x64.zip",
+            "hash": "deb8a94e079d4b8de0d6fd747e685ca8f68d3f06f20dc6686772134e0ab456bd"
         },
         "arm64": {
-            "url": "https://github.com/jdx/mise/releases/download/v2026.2.23/mise-v2026.2.23-windows-arm64.zip",
-            "hash": "23c7d4fc7c30cd578a92e6c8fcea54f998e18eee7fe9237bf47746f99d25056f"
+            "url": "https://github.com/jdx/mise/releases/download/v2026.3.5/mise-v2026.3.5-windows-arm64.zip",
+            "hash": "1fffc0d662f52e3c1473f95cb6a47cd0bc2c6447634f8079254fe68d083700d7"
         }
     },
     "extract_dir": "mise",
