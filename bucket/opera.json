@@ -1,5 +1,5 @@
 {
-    "version": "136.0.6008.80",
+    "version": "137.0.6036.39",
     "description": "Fast, secure, easy-to-use browser.",
     "homepage": "https://www.opera.com/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://get.geo.opera.com/pub/opera/desktop/136.0.6008.80/win/Opera_136.0.6008.80_Setup_x64.exe#/dl.7z",
-            "hash": "4f4593749f89c075f05a3d6102a970e866eb7df2c964e34465f8939299ef24dd"
+            "url": "https://get.geo.opera.com/pub/opera/desktop/137.0.6036.39/win/Opera_137.0.6036.39_Setup_x64.exe#/dl.7z",
+            "hash": "95bdd5acc7c5ba4a59d6baa32ef649d2cf4c30de35f86a29ab99c4ba1ab9daab"
         },
         "32bit": {
-            "url": "https://get.geo.opera.com/pub/opera/desktop/136.0.6008.80/win/Opera_136.0.6008.80_Setup.exe#/dl.7z",
-            "hash": "c1f4b80dd5e19594df7463cdc95e5cc61635998e762747080816eb9b3848b521"
+            "url": "https://get.geo.opera.com/pub/opera/desktop/137.0.6036.39/win/Opera_137.0.6036.39_Setup.exe#/dl.7z",
+            "hash": "db913e7023ab88d731fe5bc2e1b43920d64a6709ff5390dd4deceb42a78abdef"
         }
     },
     "installer": {
